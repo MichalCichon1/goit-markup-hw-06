@@ -670,9 +670,11 @@ ul {
   outline: none;
   border: none;
   padding: 10px;
-  width: 91%;
+  width: 100%;
+  padding-left: 41px;
 }
 .conteiner-data-modal {
+  overflow: hidden;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
@@ -682,7 +684,10 @@ ul {
   transition-duration: 250ms;
 }
 .conteiner-data-modal svg {
+  position: absolute;
   margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 14px;
 }
 .conteiner-data-modal:hover {
   border: 1px solid #2196f3;
@@ -691,6 +696,12 @@ ul {
 .conteiner-data-modal:focus-within {
   border: 1px solid #2196f3;
   fill: #2196f3;
+}
+.conteiner-data-modal:hover svg {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.conteiner-data-modal:focus-within svg {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .labels-comment-modal {
